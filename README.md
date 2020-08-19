@@ -1,20 +1,20 @@
-# database-json
+# simple-database-json
 
 ## Introduction
 
-The "database-json" library exported as [Node.js](https://nodejs.org/) modules. It allows you to manage a database in a simple and lisible json file.
+The "simple-database-json" library exported as [Node.js](https://nodejs.org/) modules. It allows you to manage a database in a simple and lisible json file.
 
 ## Installation
 
 Using [npm](https://npmjs.com/):
 
 ```
-npm i database-json
+npm i simple-database-json
 ```
 
 In your *index.js*:
 ```javascript
-const { JsonDataBase } = require("database-json")
+const { JsonDataBase } = require("simple-database-json")
 
 const db = new JsonDataBase("data/example.json")
 ```
@@ -244,5 +244,5 @@ db.count("members", record => record["age"] > 20, (succ, msg) => {
 
 ---
 ## Links
-- [Github](https://github.com/LeTomium/database-json)
-- [NPM](https://www.npmjs.com/package/database-json)
+- [Github](https://github.com/LeTomium/simple-database-json)
+- [NPM](https://www.npmjs.com/package/simple-database-json)
