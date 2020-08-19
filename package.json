@@ -1,0 +1,26 @@
+{
+  "name": "database-json",
+  "version": "1.0.0",
+  "description": "Json Database manager for NodeJs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeTomium/database-json.git"
+  },
+  "keywords": [
+    "database",
+    "json"
+  ],
+  "author": "LeTomium",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeTomium/database-json/issues"
+  },
+  "homepage": "https://github.com/LeTomium/database-json#readme",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}
