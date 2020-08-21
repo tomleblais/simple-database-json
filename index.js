@@ -50,7 +50,7 @@ class JsonDataBase {
         if (typeof filename !== "string")
             throw TypeError("JsonDataBase.constructor() - Argument 1: filename is not a string.")
 
-        this.filename = path.join(__dirname, filename)
+        this.filename = path.join(__dirname, "../../", filename)
 
         if (!fs.existsSync(this.filename)) {
             try {
@@ -132,7 +132,12 @@ class JsonDataBase {
                 if (typeof attr === "object") {
                     if (typeof attr.name === "string" && attr.name !== "") {
                         if (!columns.includes(attr.name)) {
-                            Object.assign(attr, DEFAULT_ATTRIBUTE)
+                            for (const propname in DEFAULT_ATTRIBUTE) {
+                                if (DEFAULT_ATTRIBUTE.hasOwnProperty(propname)) {
+                                    if (attr[propname] === undefined)
+                                        attr[propname] = DEFAULT_ATTRIBUTE[propname]
+                                }
+                            }
                             columns.push(attr.name)
                         } else {
                             callback(false, `Two columns cannot have the same name.`)

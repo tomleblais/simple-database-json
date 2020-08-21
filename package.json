@@ -1,6 +1,6 @@
 {
   "name": "simple-database-json",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Json Database manager for NodeJs.",
   "main": "index.js",
   "scripts": {
