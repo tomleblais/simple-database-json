@@ -1,0 +1,6 @@
+{
+    "options": {
+        "source": "index.js",
+        "files": ["API.md"]
+    }
+}
